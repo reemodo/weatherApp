@@ -1,0 +1,23 @@
+h6.flex-grow-1 {
+    align-content: center;
+    text-align: center;
+    font-size: larger;
+}
+.card {
+    color: #4B515D;
+    border-radius: 35px;
+    margin-top: 15px;
+}
+.poem {
+    overflow: scroll;
+    scrollbar-color: white;
+    scrollbar-width: 10px;
+    height: 100vh;
+  }
+  section {
+    background-color: #4B515D;
+    padding: 10px;
+}
+
+   
+ 
