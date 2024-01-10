@@ -1,6 +1,6 @@
 const express = require("express")
 const path = require("path")
-
+const Database = require("./server/utilities/DatabaseManager")
 // Setting up express, serving client files, configuring bodyParser
 //TODO: need to add it to the .env file
 const port = 3000
@@ -22,9 +22,4 @@ app.listen(port, function(){
     console.log(`Node server created at port ${port}`)
 })
 
-//TODO: move the URL To const in config or fo with env
-// Mongoose setup
-const mongoose = require('mongoose')
-//TODO: put the connection in a Database manager more mantibilty and easy to change
-mongoose.connect("mongodb://127.0.0.1:27017/cityDB", {
-}).catch((err)=> console.log(err))
+Database.connectDB()
